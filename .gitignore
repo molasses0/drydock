@@ -3,7 +3,8 @@ node_modules
 dist
 frontend-dist
 coverage
-lib
+# include lib since npm won't run prepublish to do the compile when using a git url
+# lib
 
 # added by GitSavvy
 /npm-debug.log
