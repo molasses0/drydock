@@ -24,7 +24,7 @@ export default class Drydock {
       port: options.port || 1337,
       ip: options.ip || "0.0.0.0",
       verbose: !!options.verbose,
-      cors: !!options.cors,
+      cors: typeof options.cors === "object" ? options.cors : !!options.cors,
       proxyUndefined: !!options.proxyUndefined,
       cookieEncoding: options.cookieEncoding || "none",
       _initial: {
